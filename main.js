@@ -1,6 +1,6 @@
 function setup(){
     canvas=createCanvas(500, 500);
- canvas.position(400,40);
+ canvas.position(400,100);
   }
   function draw(){
     textSize(10);
