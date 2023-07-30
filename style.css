@@ -30,7 +30,8 @@ canvas
   box-shadow:5px 5px 5px grey;
   width: 600px;
   height: 600px;
-  top: 250px;
+  top: 100px;
+  bottom:75px;
   background-color: lavender;
   
  
