@@ -3,6 +3,10 @@ function setup(){
  canvas.position(400,90);
     poseNet = ml5.poseNet(video, modelLoaded);
     poseNet.on('pose', gotPoses);
+      video=createCapture( VIDEO );
+  video.size(500, 500);
+  PoseNet=ml5.poseNet(video, modelLoaded);
+  PoseNet.on("pose", gotResult)
   }
   function draw(){
     textSize(10);
@@ -19,8 +23,6 @@ function setup(){
   function modelLoaded(){
     console.log("PoseNet is initialized");
   }
-function modelLoaded(){
-  console.log("PoseNet is initialized");
 }
 function gotResult(results){
 if (results.length>0)
